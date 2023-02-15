@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="../style/style.css" type="text/css">
+    <link rel="shortcut icon" href="../img/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="conteiner">
+          <div class="header_sait">
+            <div class="logotip"><a href="../index.html" class="logotip-a"><img src="../img/logo.png" alt="логотип" class="logo" width="100px"></a></div>
+            <div class="title">
+              <h1>Дворец культуры имени Ю. А. Гагарина</h1>
+            </div>
+            <div class="telefon"><a href="tel:+79652289574">+7 (965) 228-77-77</a></div>
+            <div class="mobail_menu"><img src="../img/open-menu.svg" id="mobile-menu-btn" alt=""></div>
+          </div>
+        </div>
+        <nav class="navigation">
+          <div class="conteiner">
+            <ul>
+              <li><a href="../index.html" class="frist">Главная</a></li>
+              <li><a href="poster.html">Афишы</a></li>
+              <li><a href="festivals.html">Фестивали</a></li>
+              <li><a href="children.html">Детям</a></li>
+              <li><a href="actoractor.html">Актёры</a></li>
+              <li><a href="contacts.html">Конакты</a></li>
+              <li><a href="reviews.html">Отзывы</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div class="content">
+        <div class="conteiner conteiner_contacts">
+          <div class="breadcrumbs"><a href="../index.html">Главная</a> <span>/</span> Контакты</div>
+          <section class="right_contacts">
+              <h1>Контакты</h1>
+              <iframe class="map_main" src="https://www.google.com/maps/d/embed?mid=1ejUZ_TGhDXdf3-r3dqYLQkJtiDV5PoZR"></iframe>
+          </section>
+          <section class="center_contacts hr_upright">
+            <div></div>
+          </section>
+          <section class="left_contacts">
+            <section class="poster_consttantly">
+              <h2>Афиша</h2>
+              <div>
+                <h3><a href="weltmer_exposition.html">Персональная выставка члена союза художников России Владимира Макеева?</a></h3>
+                <p>5 марта - 20 апреля</p>
+              </div>
+              <div>
+                <h3><a href="75_victory.html">«75 мгновений Великой Победы»</a></h3>
+                <p>26 марта - 13:00 - 8 мая - 14:00</p>
+              </div>
+              <div>
+                <h3><a href="sretensky_choir.html">Хор Сретенского монастыря с программой “ Шедевры мировой музыки”</a></h3>
+                <p>21 апреля - 19:00</p>
+              </div>
+              <div>
+                <h3><a href="heirs_of_victory.html">Наследники победы</a></h3>
+                <p>25 апреля - 13:00</p>
+              </div>
+              <div>
+                <h3><a href="the_doctor_knows_everything.html">“Доктор знает все”</a></h3>
+                <p>26 апреля - 18:00</p>
+              </div>
+            </section>
+          </section>
+          <section class="bottom_contacts">
+            <h2 class="tel_cashbox">Телефон кассы: <br> <span class="italics">(54)-</span>2-72-61</h2>
+            <h3>Режим работы ДК им Ю.А.Гагарина</h3>
+            <p>ежедневно с 10:00 до 21:00</p>
+            <p>г. Сергиев Посад, пр-т Красной Армии, 185</p>
+            <h3 class="red_title">Время работы кассы:</h3>
+            <p>понедельник - пятница с 10:00 до 19:00,</p>
+            <p>суббота - воскресенье с 10:00 до 18:00</p>
+            <p>Обед с 14:00 до 15:00</p>
+            <h3 class="red_title bottom_contacts_h3">Технические перерывы:</h3>
+            <p>с 12:00 до 12:15 с 17:00 до 17:15</p>
+          </section>
+        </div>
+      </div>
+      <footer>
+        <div class="conteiner">
+          <div class="footer_menu">
+            <div class="footer_menu-p">
+              <span>О нас</span>
+              <p><a href="us.html">О театре</a></p>
+              <p><a href="vacancy.html">Вакансии</a></p>
+            </div>
+            <div class="footer_menu-p">
+              <span>Помощь</span>
+              <p><a href="question.html">Часто задоваемые вопросы</a></p>
+              <p><a href="order.html">Как заказать билеты</a></p>
+              <p><a href="return.html">Возврат билетов</a></p>
+            </div>
+            <div class="footer_menu-p">
+              <span>Правила изпользования</span>
+              <p><a href="return.html">Пользовательское соглашение</a></p>
+            </div>
+          </div>
+          <div class="footer_mail-tel">
+            <p>Тел: (880)555-77-77</p>
+            <p>theater@mail.ru</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      $(document).ready(function() {
+
+        $('#mobile-menu-btn').on('click', function() {
+          $('.navigation').slideToggle(500);
+        });
+
+      });
+    </script>
+  </body>
+</html>

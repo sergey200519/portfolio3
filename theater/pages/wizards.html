@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Детский театральный коллектив «Чародеи»</title>
+    <link rel="shortcut icon" href="../img/logo.png">
+    <link rel="stylesheet" href="../style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="conteiner">
+          <div class="header_sait">
+            <div class="logotip"><img src="../img/logo.png" alt="логотип" class="logo" width="100px"></div>
+            <div class="title">
+              <h1>Дворец культуры имени Ю. А. Гагарина</h1>
+            </div>
+            <div class="telefon"><a href="tel:+79652289574">+7 (965) 228-77-77</a></div>
+            <div class="mobail_menu"><img src="../img/open-menu.svg" id="mobile-menu-btn" alt=""></div>
+          </div>
+        </div>
+        <nav class="navigation">
+          <div class="conteiner">
+            <ul>
+              <li><a href="../index.html">Главная</a></li>
+              <li><a href="poster.html">Афишы</a></li>
+              <li><a href="festivals.html">Фестивали</a></li>
+              <li><a href="children.html">Детям</a></li>
+              <li><a href="actoractor.html">Актёры</a></li>
+              <li><a href="contacts.html">Конакты</a></li>
+              <li><a href="reviews.html">Отзывы</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div class="content">
+        <div class="conteiner theater_attic">
+          <h3 id="h2_italics" class="vacancy_h3_title_italics">Детский театральный коллектив <span>«Чар</span>одеи».</h3>
+          <img src="../img/wizards.jpg" alt="">
+          <div class="vacancy_content">
+            <p>Детский театральный коллектив «Чародеи» основан в 2007 году.  Включает в себя 3 разновозрастные группы, в составе коллектива.</p>
+            <p>В программу занятий каждой группы входят обязательные занятия по сценической речи и актёрскому мастерству. В младшей группе делается акцент на упражнения по развитию фантазии, воображения, внимания, памяти физических действий. В средней – проводится этюдная работа на перемену отношения к предмету, и обязательные тренинги по сценической речи. В старшей группе проводятся более углубленные занятия (упражнения) по оценке факта, сценической задаче, коллективные этюды.</p>
+            <p>Детский театральный коллектив «Чародеи» активно принимает участие в мероприятиях Дворца культуры. За годы существования поставлено 6 Новогодних сказок и 5 камерных спектаклей:  «Играем в Чехова», «Метаморфозы метафор» (по поэзии С. Есенина), «Театр, театр, театр», «Когда некогда» по стихам А.Геворгизова, «Сказки Италии».</p>
+            <img src="../img/wizards_1.jpg" alt="">
+            <img src="../img/wizards_2.jpg" alt="">
+            <p>Некоторые участники театрального коллектива поступили в театральные институты и продолжают совершенствовать свои способности на более высоком профессиональном уровне.</p>
+          </div>
+          <div class="answer_vacancy">
+            <span class="tel_vacancy"><h4>Наш телефон</h4><a href="tel:+796525565">8 (965) 255-65-65</a></span>
+            <button><a href="answer_form.html">Оставить заявку</a></button>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="conteiner">
+          <div class="footer_menu">
+            <div class="footer_menu-p">
+              <span>О нас</span>
+              <p><a href="us.html">О театре</a></p>
+              <p><a href="vacancy.html">Желающие присоеденица</a></p>
+            </div>
+            <div class="footer_menu-p">
+              <span>Помощь</span>
+              <p><a href="question.html">Часто задоваемые вопросы</a></p>
+            </div>
+            <div class="footer_menu-p">
+              <span>Правила</span>
+              <p><a href="return.html">Пользовательское соглашение</a></p>
+            </div>
+          </div>
+          <div class="footer_mail-tel">
+            <p>Тел: (880)555-77-77</p>
+            <p class="mail">theater@mail.ru</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      $(document).ready(function() {
+
+        $('#mobile-menu-btn').on('click', function() {
+          $('.navigation').slideToggle(500);
+        });
+
+      });
+    </script>
+  </body>
+</html>

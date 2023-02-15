@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>“Доктор знает все”</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="shortcut icon" href="../img/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="conteiner">
+          <div class="header_sait">
+            <div class="logotip"><img src="../img/logo.png" alt="логотип" class="logo" width="100px"></div>
+            <div class="title">
+              <h1>Дворец культуры имени Ю. А. Гагарина</h1>
+            </div>
+            <div class="telefon"><a href="tel:+79652289574">+7 (965) 228-77-77</a></div>
+            <div class="mobail_menu"><img src="../img/open-menu.svg" id="mobile-menu-btn" alt=""></div>
+          </div>
+        </div>
+        <nav class="navigation">
+          <div class="conteiner">
+            <ul>
+              <li><a href="../index.html">Главная</a></li>
+              <li><a href="poster.html">Афишы</a></li>
+              <li><a href="festivals.html">Фестивали</a></li>
+              <li><a href="children.html">Детям</a></li>
+              <li><a href="actoractor.html">Актёры</a></li>
+              <li><a href="contacts.html">Конакты</a></li>
+              <li><a href="reviews.html">Отзывы</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div class="content">
+        <div class="conteiner constatantly_1 poster_2">
+          <section class="left_weltmer_exposition poster_3">
+            <section class="top_weltmer_exposition">
+              <h2 class="weltmer_exposition_h2">"Доктор <br> зн<span class="weltmer_exposition_1">ает в</span>се"</h2>
+              <p class="text-align_center">600р. - 1200р.</p>
+            </section>
+            <section class="bottom_weltmer_exposition">
+              <h2 class="weltmer_exposition_h2" id="h2_weltmer_left"><span class="weltmer_exposition_2">Подро</span>бности</h2>
+              <div class="table_div_weltmer_exposition">
+                <div class="table_div">
+                  <div class="table_div_weltmer_exposition_1_1">
+                    <p>Дата:</p>
+                  </div>
+                  <div class="table_div_weltmer_exposition_1_2">
+                    <p>26 апреля</p>
+                  </div>
+                </div>
+              </div>
+              <div class="table_div_weltmer_exposition">
+                <div class="table_div">
+                  <div class="table_div_weltmer_exposition_2_1">
+                    <p>Время:</p>
+                  </div>
+                  <div class="table_div_weltmer_exposition_2_2">
+                    <p>18:00</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </section>
+          <section class="right_weltmer_exposition doctor_right poster_3"><img src="../img/doctor.jpg" alt="">
+            <button>Купить билет</button>
+            <h3><span id="h2_italics">Докт</span>ор знает все</h3>
+            <p><span>В ролях:</span>Алексей Макаров, Михаил Полицеймако, Владимир Фекленко</p>
+            <p><span>Режиссер:</span>Олег Фомин</p>
+            <p>Это не комедия положений. Это комедия одного положения, в котором оказались герои пьесы. Вроде бы обычная ситуация: двое приходят к врачу со своими душевными проблемами. Только пациенты — не люди, а ангел с бесом.</p>
+            <p>И проблемы такие, что непонятно, кому должен помочь доктор:  им, себе или человечеству. Сложные взаимоотношения между представителями света и тьмы заставят вас смеяться… или плакать.</p>
+            <p>Продолжительность:</p>
+            <p>1 час 50 мин</p>
+          </section>
+        </div>
+      </div>
+      <footer>
+        <div class="conteiner">
+          <div class="footer_menu">
+            <div class="footer_menu-p">
+              <span>О нас</span>
+              <p><a href="us.html">О театре</a></p>
+              <p><a href="vacancy.html">Желающие присоеденица</a></p>
+            </div>
+            <div class="footer_menu-p">
+              <span>Помощь</span>
+              <p><a href="question.html">Часто задоваемые вопросы</a></p>
+            </div>
+            <div class="footer_menu-p">
+              <span>Правила</span>
+              <p><a href="return.html">Пользовательское соглашение</a></p>
+            </div>
+          </div>
+          <div class="footer_mail-tel">
+            <p>Тел: (880)555-77-77</p>
+            <p class="mail">theater@mail.ru</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      $(document).ready(function() {
+
+        $('#mobile-menu-btn').on('click', function() {
+          $('.navigation').slideToggle(500);
+        });
+
+      });
+    </script>
+  </body>
+</html>

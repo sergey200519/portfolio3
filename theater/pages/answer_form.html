@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Оставить заявку</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="shortcut icon" href="../img/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="conteiner">
+          <div class="header_sait">
+            <div class="logotip"><a href="../index.html" class="logotip-a"><img src="../img/logo.png" alt="логотип" class="logo" width="100px"></a></div>
+            <div class="title">
+              <h1>Дворец культуры имени Ю. А. Гагарина</h1>
+            </div>
+            <div class="telefon"><a href="tel:+79652289574">+7 (965) 228-77-77</a></div>
+            <div class="mobail_menu"><img src="../img/open-menu.svg" id="mobile-menu-btn" alt=""></div>
+          </div>
+        </div>
+        <nav class="navigation">
+          <div class="conteiner">
+            <ul>
+              <li><a href="../index.html" class="frist">Главная</a></li>
+              <li><a href="poster.html">Афишы</a></li>
+              <li><a href="festivals.html">Фестивали</a></li>
+              <li><a href="children.html">Детям</a></li>
+              <li><a href="actoractor.html">Актёры</a></li>
+              <li><a href="pages/contacts.html">Конакты</a></li>
+              <li><a href="reviews.html">Отзывы</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div class="content content_vacancy_form">
+        <div class="conteiner conteiner_vacancy_form">
+           <form action="" class="vacancy_form">
+             <h3>Оставить заявку</h3>
+             <div>
+               <input type="text" placeholder="Фамилия" required>
+               <input type="text" placeholder="Имя" required>
+               <input type="text" placeholder="Отечество" required>
+             </div>
+             <h4>Укажите ваш пол</h4>
+             <div class="m_w">
+               <input type="radio">
+               <p>М</p>
+               <input type="radio">
+               <p>Ж</p>
+             </div>
+             <div>
+               <input type="text" placeholder="Укажите ваш возраст" required>
+               <input type="text" placeholder="Укажите ваш телефон" required>
+               <input type="text" placeholder="Укажте ваш email(необезательно)">
+             </div>
+             <div><button type="button" name="button">Отправить</button></div>
+          </form>
+        </div>
+      </div>
+      <footer class="footer_vacancy_form">
+        <div class="conteiner">
+          <div class="footer_menu">
+            <div class="footer_menu-p">
+              <span>О нас</span>
+              <p><a href="us.html">О театре</a></p>
+              <p><a href="vacancy.html">Желающие присоеденица</a></p>
+            </div>
+            <div class="footer_menu-p">
+              <span>Помощь</span>
+              <p><a href="question.html">Часто задоваемые вопросы</a></p>
+            </div>
+            <div class="footer_menu-p">
+              <span>Правила</span>
+              <p><a href="return.html">Пользовательское соглашение</a></p>
+            </div>
+          </div>
+          <div class="footer_mail-tel">
+            <p>Тел: (880)555-77-77</p>
+            <p class="mail">theater@mail.ru</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      $(document).ready(function() {
+
+        $('#mobile-menu-btn').on('click', function() {
+          $('.navigation').slideToggle(500);
+        });
+
+      });
+    </script>
+  </body>
+</html>

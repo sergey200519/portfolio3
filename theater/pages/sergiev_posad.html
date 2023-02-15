@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Народный коллектив камерный хор «Сергиев Посад»</title>
+    <link rel="shortcut icon" href="../img/logo.png">
+    <link rel="stylesheet" href="../style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="conteiner">
+          <div class="header_sait">
+            <div class="logotip"><img src="../img/logo.png" alt="логотип" class="logo" width="100px"></div>
+            <div class="title">
+              <h1>Дворец культуры имени Ю. А. Гагарина</h1>
+            </div>
+            <div class="telefon"><a href="tel:+79652289574">+7 (965) 228-77-77</a></div>
+            <div class="mobail_menu"><img src="../img/open-menu.svg" id="mobile-menu-btn" alt=""></div>
+          </div>
+        </div>
+        <nav class="navigation">
+          <div class="conteiner">
+            <ul>
+              <li><a href="../index.html">Главная</a></li>
+              <li><a href="poster.html">Афишы</a></li>
+              <li><a href="festivals.html">Фестивали</a></li>
+              <li><a href="children.html">Детям</a></li>
+              <li><a href="actoractor.html">Актёры</a></li>
+              <li><a href="contacts.html">Конакты</a></li>
+              <li><a href="reviews.html">Отзывы</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div class="content">
+        <div class="conteiner theater_attic">
+          <h3 id="h2_italics" class="vacancy_h3_title_italics">Народный коллектив камерный хор <span>«Серг</span>иев Посад»</h3>
+          <img src="../img/sergiev_posad.jpg" alt="">
+            <div class="vacancy_content">
+              <p>Народный коллектив камерный хор «Сергиев Посад» – хормейстер Макарова Наталья Валерьевна – замечательный педагог по вокалу, хормейстер, удивительный творческий человек, закончила Академию музыки имени Гнесиных. Хор «Сергиев Посад» самый молодой и самый многочисленный хоровой коллектив Дворца культуры. Несмотря на свой юный возраст, коллектив уже имеет звание «Народный». Хор «Сергиев Посад» постоянный участник всех мероприятий, проводимых Дворцом культуры. Большая творческая дружба связывает хор с библиотеками и другими организациями города. Проведено множество авторских программ  – «Свет Рождества», «Музыка под снегом», «Строки опаленные войной» и мн. др.</p>
+              <div class="vacancy_content_ryabinushka">
+                <img src="../img/../img/sergiev_posad_2.jpg" alt="">
+                <img src="../img/../img/sergiev_posad_3.jpg" alt="">
+              </div>
+              <p>Коллектив старается находить новые формы концертов, лекториев, сольных выступлений. Силами этого замечательного коллектива за все время их существования было проведено большое количество концертов на различных площадках, как нашего города, так и за его пределами.</p>
+              <p>У хора есть опыт проведения благотворительных выступлений. В 2009 г. в рамках акции «Помоги ребенку» был проведен благотворительный концерт «Свет надежды» все средства от которого, перечислены на лечение детей больных лейкемией.</p>
+              <p>Репертуар коллектива разнообразен: от духовных произведений до обработок русских народных песен. В исполнении хора много произведений русских и зарубежных классиков, современных композиторов.</p>
+              <p>Коллектив за время своей работы успел побывать во многих странах: Германия, Франция, Голландия, Люксембург, Италия, а так же посетил святую землю Израиля Иерусалим. И всегда их принимали с теплотой и восторженными аплодисментами.</p>
+              <p>Участники коллектива люди различных профессий и возрастов. Они приходят сюда не только петь, но и пообщаться, находить новых друзей, поддерживать друг друга и в горе и в радости. Это настоящая большая любящая семья.</p>
+            </div>
+          <div class="answer_vacancy">
+            <span class="tel_vacancy"><h4>Наш телефон</h4><a href="tel:+796525565">8 (965) 255-65-65</a></span>
+            <button><a href="answer_form.html">Оставить заявку</a></button>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="conteiner">
+          <div class="footer_menu">
+            <div class="footer_menu-p">
+              <span>О нас</span>
+              <p><a href="us.html">О театре</a></p>
+              <p><a href="vacancy.html">Желающие присоеденица</a></p>
+            </div>
+            <div class="footer_menu-p">
+              <span>Помощь</span>
+              <p><a href="question.html">Часто задоваемые вопросы</a></p>
+            </div>
+            <div class="footer_menu-p">
+              <span>Правила</span>
+              <p><a href="return.html">Пользовательское соглашение</a></p>
+            </div>
+          </div>
+          <div class="footer_mail-tel">
+            <p>Тел: (880)555-77-77</p>
+            <p class="mail">theater@mail.ru</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      $(document).ready(function() {
+
+        $('#mobile-menu-btn').on('click', function() {
+          $('.navigation').slideToggle(500);
+        });
+
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Танцевальная лаборатория 45+</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="shortcut icon" href="../img/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="conteiner">
+          <div class="header_sait">
+            <div class="logotip"><a href="../index.html" class="logotip-a"><img src="../img/logo.png" alt="логотип" class="logo" width="100px"></a></div>
+            <div class="title">
+              <h1>Дворец культуры имени Ю. А. Гагарина</h1>
+            </div>
+            <div class="telefon"><a href="tel:+79652289574">+7 (965) 228-77-77</a></div>
+            <div class="mobail_menu"><img src="../img/open-menu.svg" id="mobile-menu-btn" alt=""></div>
+          </div>
+        </div>
+        <nav class="navigation">
+          <ul>
+            <li><a href="../index.html" class="frist">Главная</a></li>
+            <li><a href="poster.html">Афишы</a></li>
+            <li><a href="festivals.html">Фестивали</a></li>
+            <li><a href="children.html">Детям</a></li>
+            <li><a href="actoractor.html">Актёры</a></li>
+            <li><a href="pages/contacts.html">Конакты</a></li>
+            <li><a href="reviews.html">Отзывы</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="content">
+        <div class="conteiner" id="conteiner_kvn">
+           <section class="left_section">
+             <h2 id="h2_italics"><span>“Жен</span>щины России”</h2>
+             <section>
+               <section><img id="first_photo_kvn" src="../img/wom-rus-1.jpg"></section>
+               <section><img class="second_photo_kvn" src="../img/wom-rus-2.jpg"><img class="second_photo_kvn" src="../img/wom-rus-3.jpg" alt="Фото выступления команд КВН"></section>
+               <section><img class="third_photo_kvn" src="../img/wom-rus-4.jpg"><img class="third_photo_kvn" src="../img/wom-rus-5.jpg" alt="Фото выступления команд КВН"></section>
+               <section><img id="last_photo_kvn" src="../img/wom-rus-6.jpg"></section>
+             </section>
+           </section>
+           <section class="center_kvn hr_upright center_section">
+             <div></div>
+           </section>
+           <section class="left_contacts">
+          <section class="poster_consttantly">
+            <h2>Афиша</h2>
+            <div>
+              <h3><a href="weltmer_exposition.html">Персональная выставка члена союза художников России Владимира Макеева?</a></h3>
+              <p>5 марта - 20 апреля</p>
+            </div>
+            <div>
+              <h3><a href="75_victory.html">«75 мгновений Великой Победы»</a></h3>
+              <p>26 марта - 13:00 - 8 мая - 14:00</p>
+            </div>
+            <div>
+              <h3><a href="sretensky_choir.html">Хор Сретенского монастыря с программой “ Шедевры мировой музыки”</a></h3>
+              <p>21 апреля - 19:00</p>
+            </div>
+            <div>
+              <h3><a href="heirs_of_victory.html">Наследники победы</a></h3>
+              <p>25 апреля - 13:00</p>
+            </div>
+            <div>
+              <h3><a href="the_doctor_knows_everything.html">“Доктор знает все”</a></h3>
+              <p>26 апреля - 18:00</p>
+            </div>
+          </section>
+        </section>
+        </div>
+      </div>
+      <footer>
+        <div class="conteiner">
+          <div class="footer_menu">
+            <div class="footer_menu-p">
+              <span>О нас</span>
+              <p><a href="us.html">О театре</a></p>
+              <p><a href="vacancy.html">Желающие присоеденица</a></p>
+            </div>
+            <div class="footer_menu-p">
+              <span>Помощь</span>
+              <p><a href="question.html">Часто задоваемые вопросы</a></p>
+            </div>
+            <div class="footer_menu-p">
+              <span>Правила</span>
+              <p><a href="return.html">Пользовательское соглашение</a></p>
+            </div>
+          </div>
+          <div class="footer_mail-tel">
+            <p>Тел: (880)555-77-77</p>
+            <p class="mail">theater@mail.ru</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      $(document).ready(function() {
+
+        $('#mobile-menu-btn').on('click', function() {
+          $('.navigation').slideToggle(500);
+        });
+
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ru" data-width='400px'>
+  <head>
+    <meta charset="utf-8">
+    <title>portfolio.ru</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="img/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<!--    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+      /* css reset */
+      *,
+      *::before,
+      *::after  {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      a {
+        text-decoration: none;
+      }
+      li {
+        list-style-type: none;
+      }
+      input,
+      button,
+      textarea,
+      select {
+        font: inherit;
+      }
+
+      /* general styling - -посояные правила*/
+
+      body {
+        font-family: 'Roboto', sans-serif;
+      }
+      a {
+        color: inherit;
+      }
+      .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 5px;
+      }
+      .section-title {
+        margin: 35px 0 25px 0;
+        text-align: center;
+      }
+      .upper-case {
+        text-transform: uppercase;
+      }
+
+      /* header */
+      .header-container {
+        background: rgba(0, 0, 0, .8);
+        color: white;
+        position: sticky;
+        top: 0;
+      }
+      @keyframes show-element {
+        0% {
+          opacity: 0;
+          top: -70px;
+        }
+        100% {
+          opacity: 1;
+          top: 0;
+        }
+      }
+      .header {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px 5px;
+      }
+      .header__title--suffix {
+        color: #03b0ff;
+        font-style: normal;
+      }
+      .navigation__list {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        justify-content: space-between;
+      }
+      .navigation__list-item {
+        margin-right: 10px;
+        font-size: 18px;
+      }
+      .mobile-menu-btn {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        display: none;
+        width: 21px;
+        height: 21px;
+        border: 0;
+        color: silver;
+        background:
+          linear-gradient(currentcolor, currentcolor) top center / 100% 3px no-repeat,
+          linear-gradient(currentcolor, currentcolor) center center / 100% 3px no-repeat,
+          linear-gradient(currentcolor, currentcolor) bottom center / 100% 3px no-repeat;
+      }
+      .mobile-menu-btn:hover,
+      .mobile-menu-btn:focus {
+        color: white;
+        background:
+          linear-gradient(currentcolor, currentcolor) top center / 100% 3px no-repeat,
+          linear-gradient(currentcolor, currentcolor) center center / 100% 3px no-repeat,
+          linear-gradient(currentcolor, currentcolor) bottom center / 100% 3px no-repeat;
+        cursor: pointer;
+      }
+
+      /* content */
+      .about {
+        padding-top: 25px;
+      }
+      .about__my-photo {
+        margin: 0 auto;
+        display: block;
+        width: 250px;
+      }
+      .about__my-brith,
+      .about__my-name {
+        text-align: center;
+      }
+      .skills__box {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: center;
+      }
+      .skills-card {
+        padding: 15px 5px;
+      }
+      .chess-background {
+        background: #03b0ff;
+        color: white;
+      }
+      .skills-card__image {
+        width: 100px;
+        height: 100px;
+        display: block;
+        margin: 0 auto 15px auto;
+      }
+      .strengths__box {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: minmax(150px, auto);
+        text-align: center;
+      }
+      .strengths__card {
+        padding: 15px 5px;
+      }
+      .portfolio__box {
+        margin-top: 25px;
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        justify-content: space-between;
+      }
+      .portfolio__item {
+        width: 45%;
+      }
+      .portfolio__item-preview {
+        width: 100%;
+        height: auto;
+      }
+      .demos__box {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        justify-content: space-between;
+      }
+      .demos__item {
+        width: 30%;
+      }
+      .demos__item-preview {
+        width: 100%;
+        height: 100%;
+        outline: 1px solid rgba(192, 192, 192, .5);
+      }
+      .demos__item-signature {
+        text-align: center;
+      }
+
+      /* footer */
+      .footer-container {
+        padding: 10px 0;
+        margin-top: 60px;
+        background: rgba(0, 0, 0, .8);
+        color: white;
+      }
+      .footer {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        justify-content: space-between;
+      }
+      .contacts-footer {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+      }
+
+      /* media */
+      @media (max-width: 575px) {
+        .header {
+          -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+          flex-direction: column;
+        }
+        .mobile-menu-btn {
+          display: block;
+        }
+        .navigation__list {
+          -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          margin-top: 6px;
+        }
+        .navigation__list-item {
+          margin: 0 auto;
+          margin-bottom: 5px;
+          text-align: center;
+        }
+        .skills__box {
+          grid-template-columns: 1fr;
+        }
+        .strengths__box {
+          grid-template-columns: 1fr;
+        }
+        .strengths__card,
+        .skills-card {
+          padding: 10px 40px;
+         }
+        .portfolio__box {
+          display: block;
+        }
+        .portfolio__item {
+          width: 80%;
+          margin: 0 auto;
+        }
+        .demos__box {
+          -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+          flex-direction: column;
+        }
+        .demos__item {
+          width: 80%;
+          margin: 0 auto;
+        }
+      }
+      @media (max-width: 400px) {
+        .strengths__card,
+        .skills-card {
+          padding: 10px 45px;
+          width: 100%;
+        }
+        .portfolio__item {
+          width: 100%;
+        }
+        .demos__item {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header-container">
+        <div class="container header">
+          <h1 class="header__title upper-case">
+            Portfolio<em class='header__title--suffix'>.ru</em>
+          </h1>
+            <style>
+              @media (max-width: 575px) {
+                .u-menu-input + .navigation {
+                  display: none;
+                }
+                .u-menu-input {
+                  display: block;
+                  transition: 1s;
+                }
+              }
+                .u-menu-input {
+                  display: none;
+                }
+              .u-menu-input:checked + .navigation {
+                display: block;
+              }
+            </style>
+          <input class='u-menu-input' id='u-menu-input' type='checkbox'>
+            <nav class="navigation">
+              <ul class="navigation__list">
+                <li class="navigation__list-item">
+                  <a href="#my-skills">Мои умения</a>
+                <li class="navigation__list-item">
+                  <a href="#portfolio">Портфолио</a>
+                <li class="navigation__list-item">
+                  <a href="#about">Обо мне</a>
+              </ul>
+            </nav>
+          <label for='u-menu-input' class="mobile-menu-btn js-mobile-menu-btn">
+          </label>
+        </div>
+      </header>
+      <main class="content-container" id="about">
+        <div class="container content">
+          <section class="about">
+            <img class="about__my-photo" src="img/my_photo.png" alt="Моё фото">
+            <div class='about__my-name'>Оборок Сергей</div>
+            <div class='about__my-brith'>Год рождения: 2005г</div>
+          </section>
+          <section class="skills" id="my-skills">
+            <h2 class="section-title upper-case">Какими технологиями я владею</h2>
+            <div class="skills__box">
+              <div class="skills-card">
+                <img class="skills-card__image" src="img/html5.png" alt="логотип HTML5">
+                <h3 class="skills-card__title upper-case">html5 и css3</h3>
+                <p class="skills-card__text">Я создаю семантическую и адаптивную верстку, при помощи последних разработок в HTML и CSS.</p>
+              </div>
+              <div class="skills-card chess-background">
+                <img class="skills-card__image" src="img/git.png" alt="придумоный мною логотип git">
+                <h3 class="skills-card__title upper-case">git</h3>
+                <p class="skills-card__text">В своей работе мне приходилось работать с репозиториями через систему контроля версий Git.</p>
+              </div>
+              <div class="skills-card">
+                <img class="skills-card__image" src="img/ps.png" alt="логотип photoshop">
+                <h3 class="skills-card__title upper-case">Photoshop</h3>
+                <p class="skills-card__text">Я работаю с самым популярным редактором изображений.</p>
+              </div>
+            </div>
+          </section>
+          <section class="strengths">
+            <h2 class="section-title upper-case">Мои сильные стороны</h2>
+            <div class="strengths__box">
+              <div class="strengths__card chess-background">
+                <h3 class="strengths-card__title upper-case">Быстро обучаюсь</h3>
+                <p class="strengths-card__text">Очень быстро вхожу в курс дел, легко обучаюсь новым технологиям, всегда рад изучить что-то новое, полезное.</p>
+              </div>
+              <div class="strengths__card">
+                <h3 class="strengths-card__title upper-case">Новые технологии</h3>
+                <p class="strengths-card__text">Я учую неовейшые технологии и пользуюсь ими при создании сайта</p>
+              </div>
+              <div class="strengths__card chess-background">
+                <h3 class="strengths-card__title upper-case">Инициативный</h3>
+                <p class="strengths-card__text">Я инициативный человек, у которого как правило несколько решений одних и тех же задач.</p>
+              </div>
+            </div>
+          </section>
+          <section class="portfolio" id="portfolio">
+            <h2 class="section-title upper-case">Мои последние работы из портфолио</h2>
+            <div class="portfolio__box">
+             <a class='portfolio__item' href="четыри праила вёрстки/index.html"><img class='portfolio__item-preview' src="img/pravila.png" alt=""></a>
+             <a class='portfolio__item' href="theater/index.html"><img class='portfolio__item-preview' src="img/dk_gag.png" alt=""></a>
+            </div>
+          </section>
+          <section class="demos">
+            <h2 class="section-title upper-case">Мои demo</h2>
+            <div class="demos__box">
+              <a class="demos__item" href="pages/gradient.html"><img class="demos__item-preview" src="img/flag.png" alt=""><p class="demos__item-signature">Демонстрация linear-gradient</p></a>
+              <a class="demos__item" href="pages/animation.html"><img class="demos__item-preview" src="img/anim.png" alt=""><p class="demos__item-signature">Демонстрация псевдо графики в css и последующее анимерование</p></a>
+              <a class="demos__item" href="pages/flexbox.html"><img class="demos__item-preview" src="img/flexbox.png" alt=""><p class="demos__item-signature">Демонстрация возможностей flexbox</p></a>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer class='footer-container'>
+        <div class="container footer">
+          <div class="footer__logo upper-case">Portfolio.ru</div>
+          <div class="contacts-footer">
+            <div class="contacts-footer__title upper-case">Контакты</div>
+            <ul class="contact-list">
+              <li class="contact-list__item">oborok05@bk.ru</li>
+              <li class="contact-list__item">8(967) 147-80-10</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

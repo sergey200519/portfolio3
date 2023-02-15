@@ -1,0 +1,46 @@
+<!doctype html>
+<html data-width='500px'>
+  <head>
+  </head>
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      height: 100vh;
+      display: flex;
+      padding: 25px;
+      outline: solid;
+      background: #000;
+    }
+    h1 {
+      color: white;
+      position: absolute;
+    }
+    .bg {
+      margin: auto;
+      width: 50%;
+      height: 0;
+      padding-bottom: 33%;
+      border: 3px solid  #C0C0C0;
+      background:
+        linear-gradient(#F48024, #F48024) 0 0 / 33.3333% no-repeat,
+        linear-gradient(#4A8AF4, #4A8AF4) 100% 0 / 33.3333% no-repeat,
+        linear-gradient(white, white) 0 0 / 100% no-repeat;
+    }
+    @media (max-width: 600px) {
+      .bg {
+        width: 100%;
+        padding-bottom: 66%;
+      }
+    }
+  </style>
+  <body>
+    <h1>Демонстрация возможностей linear-gradient</h1>
+    <div class='bg'></div>
+  </body>
+</html>

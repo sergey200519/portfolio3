@@ -1,0 +1,86 @@
+<!doctype html>
+<html data-width='800px'>
+  <head>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      display: flex;
+      padding: 20px;
+      color: #333;
+      overflow: hidden;
+      height: 100vh;
+    }
+    h1 {
+      display: block;
+      position: absolute;
+    }
+    main {
+      margin: auto;
+      position: relative;
+      width: 400px;
+      height: 400px;
+      animation-name: spin;
+      animation-timing-function: linear;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+    }
+    div {
+      position: absolute;
+      width: 300px;
+      height: 10px;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      background: blue;
+    }
+    .a {
+      transform: rotate(0deg);
+    }
+    .b {
+      transform: rotate(36deg);
+    }
+    .c {
+      transform: rotate(72deg);
+    }
+    .d {
+      transform: rotate(108deg);
+    }
+    .e {
+      transform: rotate(144deg);
+    }
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+        }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    @media (max-width: 320px) {
+      main {
+        width: 250px;
+        height: 250px;
+      }
+      div {
+        width: 200px;
+      }
+    }
+    </style>
+  <body>
+    <h1>Демострация псевдо графики в css и её последующая анимация</h1>
+    <main>
+      <div class='a'></div>
+      <div class='b'></div>
+      <div class='c'></div>
+      <div class='d'></div>
+      <div class='e'></div>
+    </main>
+  </body>
+</html>

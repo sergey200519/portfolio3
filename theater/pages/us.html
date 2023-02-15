@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>О театре</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="shortcut icon" href="../img/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="conteiner">
+          <div class="header_sait">
+            <div class="logotip"><a href="../index.html" class="logotip-a"><img src="../img/logo.png" alt="логотип" class="logo" width="100px"></a></div>
+            <div class="title">
+              <h1>Дворец культуры имени Ю. А. Гагарина</h1>
+            </div>
+            <div class="telefon"><a href="tel:+79652289574">+7 (965) 228-77-77</a></div>
+            <div class="mobail_menu"><img src="../img/open-menu.svg" id="mobile-menu-btn" alt=""></div>
+          </div>
+        </div>
+        ‪<nav class="navigation">
+          <div class="conteiner">
+            <ul>
+              <li><a href="../index.html" class="frist">Главная</a></li>
+              <li><a href="poster.html">Афишы</a></li>
+              <li><a href="festivals.html">Фестивали</a></li>
+              <li><a href="children.html">Детям</a></li>
+              <li><a href="actoractor.html">Актёры</a></li>
+              <li><a href="contacts.html">Конакты</a></li>
+              <li><a href="reviews.html">Отзывы</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div class="content">
+        <div class="conteiner conteiner_us">
+          <h1 id="h2_italics"><span>О на</span>с</h1>
+          <section>
+            <img src="../img/dk_gag_5.jpg" class="us_main_img" alt="">
+            <p>Мы говорим Сергиев Посад, - подразумеваем Троице-Сергиева лавра. Такое отождествление, может быть, и оправдано с точки зрения туристического бизнеса, - с точки зрения концепции Золотого кольца России, - однако для краеведения эта позиция, как минимум, непродуктивна. Бывая в Сергиевом Посаде, я несколько раз пытался - и, кажется, успешно - вырваться за пределы лаврской "орбиты" (см. здесь и здесь). Сегодня, любезный читатель, представлю на твой суд нечто более радикальное. Готовя этот очерк, я сознательно избегал не только видов Троице-Сергиевой лавры, но и вообще всяких намеков на православный историко-культурный контекст - исключительно из экспериментальных соображений. Опыт получился небезынтересный...</p>
+            <img src="../img/dk_gag_6.jpg" class="us_main_img_2" alt="">
+          </section>
+        </div>
+      </div>
+      <footer>
+        <div class="conteiner">
+          <div class="footer_menu">
+            <div class="footer_menu-p">
+              <span>О нас</span>
+              <p><a href="us.html">О театре</a></p>
+              <p><a href="vacancy.html">Желающие присоеденица</a></p>
+            </div>
+            <div class="footer_menu-p">
+              <span>Помощь</span>
+              <p><a href="question.html">Часто задоваемые вопросы</a></p>
+            </div>
+            <div class="footer_menu-p">
+              <span>Правила</span>
+              <p><a href="return.html">Пользовательское соглашение</a></p>
+            </div>
+          </div>
+          <div class="footer_mail-tel">
+            <p>Тел: (880)555-77-77</p>
+            <p class="mail">theater@mail.ru</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      $(document).ready(function() {
+
+        $('#mobile-menu-btn').on('click', function() {
+          $('.navigation').slideToggle(500);
+        });
+
+      });
+    </script>
+  </body>
+</html>
